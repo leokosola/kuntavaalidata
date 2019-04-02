@@ -1,0 +1,96 @@
+body {
+    background: hotpink;
+    color: #131313;
+    animation-name: taustafade;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    margin: 0;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.aloitus {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leipis {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    margin: 30px auto;
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.05rem;
+}
+
+h1 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 6rem;
+}
+
+h2 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+p.ingressi {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+@keyframes taustafade {
+    0% {background: hotpink;}
+    100% {background: lavender;}
+}
+
+div.bar {
+    display: inline-block;
+    width: 40px;
+    background: gold;
+    margin: 2px;
+}
+
+.waffle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.block {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.gender-scatter {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: hidden;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #fff9;
+}
+
+footer p {
+    max-width: 600px;
+    margin: auto;
+    padding: 50px;
+}
