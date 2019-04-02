@@ -29,7 +29,8 @@ body {
 /* Sections */
 
 .koko-maa, .kunnat {
-    margin: 150px 0;
+    margin: 0 0 300px 0;
+    padding: 0 20px;
 }
 
 .aloitus {
@@ -89,21 +90,30 @@ div.bar {
     flex-wrap: wrap;
     width: 300px;
     margin: 0 auto;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 1000ms;
 }
 
 .block {
-    width: 20px;
-    height: 20px;
+    width: 2px;
+    height: 2px;
     margin: 5px;
+    transition: width 2000ms, height 2000ms;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    box-sizing: border-box;
 }
 
 .gender-scatter {
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     height: auto;
-    padding: 30px 0;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 2000ms;
+    /* background: white; */
 }
 
 footer {
@@ -118,7 +128,6 @@ footer p {
     margin: auto;
     padding: 50px;
 }
-
 
 
 /*Desktop styles*/
@@ -142,6 +151,26 @@ footer p {
         letter-spacing: 0.05rem;
     }
 }
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    stroke-width: 3px;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+.ots-1 {
+
+}
+
+
 
 @media only screen and (min-width: 768px) {
     h1 { font-size: 4rem; }
