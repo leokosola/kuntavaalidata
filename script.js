@@ -19,20 +19,12 @@ waffle
 var w = 1000;
 var h = 600;
 var radius = 5;
-var koordinaatit = [
-    [37,134],
-    [27,98],
-    [41,29],
-    [35,131],
-    [37,94],
-    [47,58],
-    [42,45]
-];
 
 const svg = d3.select(".gender-scatter")
 .append("svg")
-.attr("width", w)
-.attr("height", h);
+// .attr("width", w)
+// .attr("height", h)
+.attr("viewBox", "0 0 1000 600");
 
 const text = d3.select(".gender-scatter")
 .append("p")
@@ -40,10 +32,11 @@ const text = d3.select(".gender-scatter")
 .style("font-family", "'Helvetica', 'Arial', sans-serif")
 .text("50/50");
 
+
 svg.append("line")
-    .attr("x1", 200)
+    .attr("x1", 0)
     .attr("y1", 0)
-    .attr("x2", 200)
+    .attr("x2", 0)
     .attr("y2", h)
     .attr("stroke", "black")
     .attr("stroke-width", 1.5);
@@ -57,9 +50,9 @@ svg.append("line")
     .attr("stroke-width", 3);
 
 svg.append("line")
-    .attr("x1", 800)
+    .attr("x1", 1000)
     .attr("y1", 0)
-    .attr("x2", 800)
+    .attr("x2", 1000)
     .attr("y2", h)
     .attr("stroke", "black")
     .attr("stroke-width", 1.5);
