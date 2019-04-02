@@ -64,7 +64,7 @@ svg.append("line")
     .attr("stroke", "black")
     .attr("stroke-width", 1.5);
 
-var testidata = d3.csv("data.csv")
+var testidata = d3.csv("https://raw.githubusercontent.com/leokosola/kuntavaalidata/gh-pages/data.csv")
 .then(function(data) {
     data.forEach(function(d) {
         d.ehdokkaita = +d.ehdokkaita;
