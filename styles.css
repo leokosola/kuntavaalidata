@@ -175,7 +175,7 @@ footer p {
     height: auto;
     position: absolute;
     top: 50px;
-    left: calc (50% - 100px);
+    left: calc(50% - 100px);
     transform: rotate(90deg);
     filter: grayscale(100%);
 
